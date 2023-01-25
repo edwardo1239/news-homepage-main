@@ -14,16 +14,38 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="css/header.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/NewMenu.css" rel="stylesheet" />
+  <link href="css/bottom.css" rel="stylesheet" />
+
+  <!-- font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <article class="container" title="A news page">
-
+  
+  <article class="container" id="containerId" title="A news page">
+    <!-- mobile navigation bar -->
+    
+    <div class="overlay" id="overlayId">
+      <nav class="nav-bar-mobile" id="nav_bar_mobile" title="The logo and the nav menu">
+        <button class="Close-button" id="Close_button">
+          <img src="assets/images/icon-menu-close.svg"
+          alt="Close button""
+          title="The close button for the menu mobile version">
+        </button>
+        <button id="nav_button_mobile" class="nav-button-mobile">Home</button>
+        <button id="nav_button_mobile" class="nav-button-mobile">New</button>
+        <button id="nav_button_mobile" class="nav-button-mobile">Popular</button>
+        <button id="nav_button_mobile" class="nav-button-mobile">Trending</button>
+        <button id="nav_button_mobile" class="nav-button-mobile">Categories</button>
+        
+      </nav>
+    </div>
     <!-- Header section -->
     <header>
       <picture class="Logo">
@@ -32,31 +54,34 @@
         title="A W letter, is the logo of the page">
       </picture>
       <!-- navigation bar -->
-      <nav class="nav-bar" title="The logo and the nav menu">
+      
+      <nav class="nav-bar" id="nav_bar" title="The logo and the nav menu">
+        
         <button id="nav_button" class="nav-button">Home</button>
         <button id="nav_button" class="nav-button">New</button>
         <button id="nav_button" class="nav-button">Popular</button>
         <button id="nav_button" class="nav-button">Trending</button>
         <button id="nav_button" class="nav-button">Categories</button>
+        
       </nav>
+    
       <button class="menu-button" id="menu_button">
         <img src="assets/images/icon-menu.svg"
         alt="Menu button""
         title="The button menu for the mobile version">
       </button>
-      <button class="Close-button" id="Close_button">
-        <img src="assets/images/icon-menu-close.svg"
-        alt="Close button""
-        title="The close button for the menu mobile version">
-      </button>
+    
     </header>
     <!-- The article title and learn more -->
     <div class="Title-main">
-      <picture class="Main-picture" title="Web site main picture"></picture>
+      
+        <img class="Main-picture" src="/assets/images/image-web-3-mobile.jpg" alt="Main image"> 
+        <img Class="Main-picture-desk" src="/assets/images/image-web-3-desktop.jpg" alt="Main image">
+      
       <h1>The Bright Future of Web 3.0?</h1>
       <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
         But is it really fulfilling its promise?</p>
-      <button id="Read_more" class="Read-more">Read more</button>
+      <button id="Read_more" class="Read-more">READ MORE</button>
     </div>
     <!-- Left side New menu -->
     <section class="New-menu">
@@ -69,47 +94,57 @@
       <hr>
       <a class="right">Is VC Funding Drying Up?</a>
       <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-    </section>>
-  </article>
+    </section>
+  
   <!-- Bottom setion -->
   <section class="Bottom-section">
     <div class="Bottom-menu">
-      <picture class="img-bottom-01">
+      <picture class="img-bottom">
         <img src="/assets/images/image-retro-pcs.jpg" 
         alt="Retro Pc" 
         title="Image of retro pc"> 
       </picture>
-      <h3>01</h3>
-      <a class="Bottom">Reviving Retro PCs</a>
-      <p> What happens when old PCs are given modern upgrades?</p>
+      <div class="bt">
+        <h3>01</h3>
+        <a class="Bottom1">Reviving Retro PCs</a>
+        <p> What happens when old PCs are given modern upgrades?</p>
+      </div>
     </div>
     <div class="Bottom-menu">
-      <picture class="img-bottom-02">
+      <picture class="img-bottom">
         <img src="/assets/images/image-top-laptops.jpg"
         alt="Keyboard image"
         title="Image of some key">
       </picture>
-      <h3>02</h3>
-      <a class="Bottom">Top 10 Laptops of 2022</a>
-      <p> Our best picks for various needs and budgets.</p>
+        <div class="bt">
+          <h3>02</h3>
+          <a class="Bottom1">Top 10 Laptops of 2022</a>
+          <p> Our best picks for various needs and budgets.</p>
+        </div>
     </div>
     <div class="Bottom-menu">
-      <picture class="img-bottom-03">
+      <picture class="img-bottom">
         <img src="/assets/images/image-gaming-growth.jpg"
         alt="Hand and a control game image"
         title="Image ofHand and a control game">
       </picture>
-      <h3>03</h3>
-      <a class="Bottom">The Growth of Gaming</a>
-      <p>How the pandemic has sparked fresh opportunities.</p>
+      <div class="bt">
+        <h3>03</h3>
+        <a class="Bottom1">The Growth of Gaming</a>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
     </div>
   </section>
 
+</article>
 
   
-  <div class="attribution">
+  <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer> -->
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
